@@ -51,7 +51,7 @@ function generateMarkdown(response) {
   ## License
   * ${renderLicenseSection(response.license)}
   ## Questions
-  If you have additional questions please contact me at ${response.email}, or if you want to see more of my work you can find them at https://github.com/${response.username} 
+  If you have additional questions please contact me at ${response.email}, or if you want to see more of my work you can find them at https://github.com/${response.userGit}
   `;
 }
 

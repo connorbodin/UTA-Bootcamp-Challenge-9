@@ -106,7 +106,7 @@ const userQuestions = [
       },
       {
         type: 'input',
-        name: 'github',
+        name: 'userGit',
         message: 'What is your github username?',
         validate:  your_Input => {
           if (your_Input) {
