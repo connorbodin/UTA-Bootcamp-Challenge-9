@@ -20,7 +20,7 @@ function renderLicenseSection(license) {
   if (!license){
     return ``;
   }else{
-    return `This project is under ${license}, for more information please refer to the license badge on top of this README`
+    return `This project is under ${license}, for more information please click the license badge on top of this README`
   }
 }
 // TODO: Create a function to generate markdown for README

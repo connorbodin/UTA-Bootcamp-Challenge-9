@@ -11,36 +11,92 @@ const userQuestions = [
         type: 'input',
         name: 'title',
         message: 'What would you like the title of your readme to be?',
+        validate:  your_Input => {
+          if (your_Input) {
+            return true
+          } else {
+            console.log("Please enter a title to continue!");
+            return false
+          }
+        }
       },
       {
         type: 'input',
         name: 'description',
         message: 'Please enter a brief description of the readme for the repository.',
+        validate:  your_Input => {
+          if (your_Input) {
+            return true
+          } else {
+            console.log("Please enter a brief description, cannot be blank!");
+            return false
+          }
+        }
       },
       {
         type: 'input',
         name: 'installation',
         message: 'Please enter in any installation instructions you might have.',
+        validate:  your_Input => {
+          if (your_Input) {
+            return true
+          } else {
+            console.log("Please enter installation instructions if you don't have any type N/A!");
+            return false
+          }
+        }
       },
       {
         type: 'input',
         name: 'usage',
         message: 'Please enter in any usage material you may have',
+        validate:  your_Input => {
+          if (your_Input) {
+            return true
+          } else {
+            console.log("Please enter usage for the material if any or if not type N/A!");
+            return false
+          }
+        }
       },
       {
         type: 'input',
         name: 'test',
         message: 'Do you have any test instructions?',
+        validate:  your_Input => {
+          if (your_Input) {
+            return true
+          } else {
+            console.log("If no test instructions please type N/A");
+            return false
+          }
+        }
       },
       {
         type: 'input',
         name: 'contributor',
         message: 'Do you have any contributors you would like to add? Please enter their github usernames.',
+        validate:  your_Input => {
+          if (your_Input) {
+            return true
+          } else {
+            console.log("If 0 contributors please type N/A");
+            return false
+          }
+        }
       },
       {
         type: 'input',
         name: 'usage',
         message: 'Please enter in any usage material you may have',
+        validate:  your_Input => {
+          if (your_Input) {
+            return true
+          } else {
+            console.log("If no usage material to add please type N/A");
+            return false
+          }
+        }
       },
       {
         type: 'list',
@@ -52,11 +108,27 @@ const userQuestions = [
         type: 'input',
         name: 'github',
         message: 'What is your github username?',
+        validate:  your_Input => {
+          if (your_Input) {
+            return true
+          } else {
+            console.log("Please enter a github username!");
+            return false
+          }
+        }
       },
       {
         type: 'input',
         name: 'email',
         message: 'What is your email address?',
+        validate:  your_Input => {
+          if (your_Input) {
+            return true
+          } else {
+            console.log("Please enter an email address!");
+            return false
+          }
+        }
       }, 
 ];
 
