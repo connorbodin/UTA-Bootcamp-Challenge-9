@@ -6,7 +6,6 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 console.log('\x1b[36m%s\x1b[0m',`Welcome to my read me generator! Please answer the following questions when prompted to do so`);
 
-// TODO: Create an array of questions for user input
 const userQuestions = [
       {
         type: 'input',
@@ -61,7 +60,6 @@ const userQuestions = [
       }, 
 ];
 
-// TODO: Create a function to write README file
 function writeToFile(filename, data) {
   fs.writeFile(filename, data, (err) => {
       if (err) {
@@ -72,10 +70,6 @@ function writeToFile(filename, data) {
   })
 };
 
-
-
-
-// TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(userQuestions).then((response) => {
     console.log(response) 
@@ -83,12 +77,6 @@ function init() {
   });
 
 }
-// // function init() {
-// //   inquirer.prompt(questions).then((response) => {
-// //     console.log(response) 
-// //     writeToFile("README.md", generateMarkDown(response)); 
-// //   });
-
 
 init();
 // Function call to initialize app
